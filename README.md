@@ -47,7 +47,7 @@ Walmart Product Catalog services - lookup and manage micro RESTful APIs.
 - Partial Search or complete sentence or alphanumeric(with space).
 
 ## Test
-* Import(Maven Project) the code straight into STS: [git clone](https://github.com/tgoraknath/wmt-store-services/)
+* Import(Maven Project) wmt-item-services into STS: [git clone](https://github.com/tgoraknath/wmt-store-services.git)
 * Right Click on Project
 * Select Run As --> Spring Boot App
 * console log: walmart.Application : Started Application in 1.266 seconds (JVM running for 1.639)
