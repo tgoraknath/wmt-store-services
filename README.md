@@ -21,7 +21,6 @@ Walmart Product Catalog services - lookup and manage micro RESTful APIs.
   - Utilize same TrieNode to look up item id's based on input search string.
 
 ## Pre-requisite
-* About 15 minutes
 * Spring Tool Suite (STS)
 * JDK 1.8 or later
 * Maven 3.2+
