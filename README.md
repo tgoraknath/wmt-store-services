@@ -43,7 +43,7 @@ Walmart Product Catalog services - lookup and manage micro RESTful APIs.
 - Centralized or External cache.
 - Bulk in-memory insertion.
 - HTTP - POST, PUT and PATCH
-- Partial Search or complete sentence or alphanumeric(with space).
+- Partial Search or complete sentence or alphanumeric(with space) with optional query params.
 
 ## Test
 * Import(Maven Project) wmt-item-services into STS: [git clone](https://github.com/tgoraknath/wmt-store-services.git)
