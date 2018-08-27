@@ -34,7 +34,7 @@ public class WmtItemsController {
     //update input memory when the request is to refresh
     // load/{i_id} - 
     @RequestMapping("/manage/all")
-	public Item[] loadAll() {
+	public Item[] loadAll() throws InterruptedException {
 		return bo.load();
 	}
     

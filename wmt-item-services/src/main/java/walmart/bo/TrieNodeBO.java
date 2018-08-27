@@ -1,5 +1,7 @@
 package walmart.bo;
 
+import static org.assertj.core.api.Assertions.setLenientDateParsing;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -34,13 +36,15 @@ public class TrieNodeBO {
 	 * offline process to manage cache. 
 	 * Invoke backend api with each of item id and manage the key words
 	 * from longDescription into a search fields.
+	 * @throws InterruptedException 
 	 */
-	public Item[] load() {
+	public Item[] load() throws InterruptedException {
 		Items[] items = Items.values();
 		//Since there is a limitation on api call, lets do it in sequence.
 		Item[] retItems = new Item[items.length];
 		for (int i = 0; i< items.length ; i++) {
 			retItems[i] = load(items[i].getItemId());
+			Thread.sleep(1000l);
 		}
 		return retItems;
 	}
