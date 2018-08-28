@@ -33,10 +33,14 @@ Walmart Product Catalog services - lookup and manage micro RESTful APIs.
 ## Manage 
 - Bulk uploads api: /manage/all uploads items with searchable fields from item long description into in-memory cache. For THA - a predefined set of item id's are choosed and will be part of search api response. 
 - Single Item update or upload api: /manage/{item_id or product_id}: Uploads in-memory cache with searchable fields from given item long description and returns Item meta data.
-- OOPs below search resulted in no data, no worries utilize below manage api's and try again.
   - http://localhost:8080/manage/35613901
   - http://localhost:8080/manage/35813552
   - http://localhost:8080/manage/23117408
+- OOPs below search resulted in no data, no worries utilize above manage api's and try again.
+  - http://localhost:8080/products?query=backpack
+  - http://localhost:8080/products?query=backPACK
+  - http://localhost:8080/products?query=backpACk
+  
 
 ## OutOfScope
 - Error and Exception Handling | Alerts, Notification and Tools.
@@ -51,6 +55,6 @@ Walmart Product Catalog services - lookup and manage micro RESTful APIs.
 * Select Run As --> Spring Boot App
 * console log: walmart.Application : Started Application in 1.266 seconds (JVM running for 1.639)
 * Search Sample Requests
-* http://localhost:8080/products?query=backpack
-* http://localhost:8080/products?query=backPACK
-* http://localhost:8080/products?query=backpACk
+  - http://localhost:8080/manage/35613901
+  - http://localhost:8080/manage/35813552
+  - http://localhost:8080/manage/23117408 
